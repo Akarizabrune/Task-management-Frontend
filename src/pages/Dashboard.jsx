@@ -30,10 +30,10 @@ const Dashboard = () => {
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold text-gray-800">My Tasks</h1>
+        <h1 className="text-3xl font-bold text-gray-950">My Tasks</h1>
         <Link
           to="/tasks/new"
-          className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
+          className="bg bg-green-700 hover:bg-amber-800 text-white px-4 py-2 rounded-md transition-colors"
         >
           Add New Task
         </Link>
@@ -48,7 +48,7 @@ const Dashboard = () => {
             onClick={() => setFilter('all')}
             className={`px-4 py-2 rounded-md ${
               filter === 'all' 
-                ? 'bg-indigo-600 text-white' 
+                ? 'bg-green-600 text-white' 
                 : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
             }`}
           >
@@ -59,7 +59,7 @@ const Dashboard = () => {
             onClick={() => setFilter('active')}
             className={`px-4 py-2 rounded-md ${
               filter === 'active' 
-                ? 'bg-indigo-600 text-white' 
+                ? 'bg-green-700 text-white' 
                 : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
             }`}
           >
@@ -70,7 +70,7 @@ const Dashboard = () => {
             onClick={() => setFilter('completed')}
             className={`px-4 py-2 rounded-md ${
               filter === 'completed' 
-                ? 'bg-indigo-600 text-white' 
+                ? 'bg-amber-700 text-white' 
                 : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
             }`}
           >

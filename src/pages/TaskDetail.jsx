@@ -75,7 +75,7 @@ const TaskDetail = () => {
         </div>
       </div>
       
-      <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-indigo-500">
+      <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
         <div className="mb-4">
           <div className="flex items-center">
             <span className={`px-3 py-1 rounded-full text-sm ${

@@ -95,7 +95,7 @@ const Register = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.name ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Enter your name"
@@ -118,7 +118,7 @@ const Register = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.email ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Enter your email"
@@ -141,7 +141,7 @@ const Register = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.password ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Create a password"
@@ -164,7 +164,7 @@ const Register = () => {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.confirmPassword ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Confirm your password"
@@ -178,7 +178,7 @@ const Register = () => {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md transition-colors disabled:opacity-75"
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-md transition-colors disabled:opacity-75"
             >
               {submitting ? 'Registering...' : 'Register'}
             </button>
@@ -186,7 +186,7 @@ const Register = () => {
           
           <div className="text-center text-gray-600">
             Already have an account?{' '}
-            <Link to="/login" className="text-indigo-600 hover:text-indigo-800">
+            <Link to="/login" className="text-green-600 hover:text-green-800">
               Log In
             </Link>
           </div>
