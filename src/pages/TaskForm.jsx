@@ -30,7 +30,7 @@ const TaskForm = () => {
             title: task.title,
             description: task.description,
             completed: task.completed
-          });
+          }); 
         }
       }
     };
@@ -124,7 +124,7 @@ const TaskForm = () => {
               name="title"
               value={formData.title}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.title ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Enter task title"
@@ -147,7 +147,7 @@ const TaskForm = () => {
               value={formData.description}
               onChange={handleChange}
               rows="4"
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.description ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Enter task description"
@@ -165,7 +165,7 @@ const TaskForm = () => {
                   name="completed"
                   checked={formData.completed}
                   onChange={handleChange}
-                  className="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                  className="h-5 w-5 text-green-600 focus:ring-green-500 border-gray-300 rounded"
                 />
                 <span className="ml-2 text-gray-700">Mark as completed</span>
               </label>
@@ -176,7 +176,7 @@ const TaskForm = () => {
             <button
               type="submit"
               disabled={submitting}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md transition-colors disabled:opacity-75"
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md transition-colors disabled:opacity-75"
             >
               {submitting 
                 ? (isEditMode ? 'Updating...' : 'Creating...') 
